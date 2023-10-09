@@ -7,9 +7,9 @@ from {{ callback_data_path }} import {{ callback_data_class }}
 {% endif %}
 
 async def {{ handler_name }}(
-        message: Message
+        message: Message,
         {%- if state %}
-        state: FSMContext
+        state: FSMContext,
         {%- endif %}
         {%- if callback_data_class %}
         callback_data: {{ callback_data_class }}

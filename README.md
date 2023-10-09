@@ -1,9 +1,11 @@
 ```
-python -m aiogramic create <EntityType>
+python -m aiogramic create:<EntityType>
+
+Types: handler, callback_data
 ```
 
 ```
-python -m aiogramic create handler <HandlerType> <HandlerName> [options]
+python -m aiogramic create:middleware <HandlerType> <HandlerName> [options]
 
 Options:
   -s, --state

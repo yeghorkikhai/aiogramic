@@ -8,11 +8,11 @@ def create_message_handler(
         callback_data_path: str | None
 ):
     builder = TemplateBuilder()
-    handler = builder.build(
+    content = builder.build(
         "handlers/message_handler",
         handler_name=handler_name,
         state=state,
         callback_data_class=callback_data_class,
         callback_data_path=callback_data_path
     )
-    print(handler)
+    return content
